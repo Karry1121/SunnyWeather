@@ -17,7 +17,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.karry.sunnyweather.R
 
 class PlaceFragment : Fragment() {
-    val viewModel by lazy { ViewModelProvider(this).get(PlaceViewModel::class.java) }
+    private val viewModel by lazy { ViewModelProvider(this).get(PlaceViewModel::class.java) }
     private lateinit var adapter: PlaceAdapter
     private lateinit var recyclerView: RecyclerView
     private lateinit var etSearchPlace: TextInputEditText
